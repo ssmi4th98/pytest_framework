@@ -27,6 +27,12 @@ To run multiple tests, one can:\n
 Pytest can be run in debug mode using the --pdb flag in console. Once a test has been found as bad, you can debug it in console and then hit "c" to continue along the test suite.\n
 You can run pytest with the --trace flag to stop at every test with the debugger. use "c" to go to next test.
 
+An additional flag -s can be used to see internal information, e.g., print statements used in fixtures. 
+
+fixtures can be scoped (setUp/tearDown) within tests
+
+conftest.py is a configure file used to hold fixtures that can be referenced by multiple tests.
+
 
 
     
