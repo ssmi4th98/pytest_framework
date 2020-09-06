@@ -19,5 +19,15 @@ To run multiple tests, one can:\n
     3. -x flag stops the tests from running if there is an error.
     4. -x flag has a --maxfail option that allows a max number of tests to fail before stopping tests,e.g, --maxfail=2
     5. to stop failure info, you can use the "--tb" (traceback) flag set to no, e.g., --tb=no (can use long, short,auto,line,native)
+    6. decorators can be used to mark tests, run test with "-m" flag as the marker and declare the marker (some markers are registered, e.g., skip)
+        "skip" also takes arguments "-r" flag for a short summary that takes an argument "s" to include reason for skip (-rs)
+        -r flag can also take the argument "f" for failure details.
+        other flags include -q for quiet; -v verbose
+        
+Pytest can be run in debug mode using the --pdb flag in console. Once a test has been found as bad, you can debug it in console and then hit "c" to continue along the test suite.\n
+You can run pytest with the --trace flag to stop at every test with the debugger. use "c" to go to next test.
+
+
+
     
     
